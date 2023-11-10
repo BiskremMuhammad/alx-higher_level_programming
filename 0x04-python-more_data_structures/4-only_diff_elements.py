@@ -8,7 +8,7 @@ def only_diff_elements(set_1, set_2):
         if item in longest:
             duplicates.append(item)
 
-    union = list(set(set_1, set_2))
+    union = list(set(set_1 + set_2))
     for item in union:
         if not item in duplicates:
             differences.append(item)
