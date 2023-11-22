@@ -1,6 +1,10 @@
 #!/usr/bin/python3
-class Square:
-    """constructor"""
+"""
+a Square Class definition
+"""
 
+
+class Square:
     def __init__(self) -> None:
+        """constructor"""
         pass

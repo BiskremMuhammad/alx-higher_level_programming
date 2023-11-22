@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-class Square:
-    """constructor"""
+"""
+a Square Class definition
+"""
 
+
+class Square:
     def __init__(self, size):
-        """Initialises the size"""
+        """constructor"""
         self.__size = size

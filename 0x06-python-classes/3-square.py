@@ -1,9 +1,12 @@
 #!/usr/bin/python3
-class Square:
-    """constructor"""
+"""
+a Square Class definition
+"""
 
+
+class Square:
     def __init__(self, size=0):
-        """Initialises the size"""
+        """constructor"""
         self.__size = size
         if not type(size) == int:
             raise TypeError('size must be an integer')
@@ -11,4 +14,5 @@ class Square:
             raise ValueError('size must be >= 0')
 
     def area(self):
+        """claculate square area"""
         return self.__size ** 2
