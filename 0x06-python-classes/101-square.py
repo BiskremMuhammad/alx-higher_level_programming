@@ -65,6 +65,26 @@ class Square:
         if self.__size <= 0:
             print()
 
+    def __str__(self):
+        """default print square"""
+
+        result = ""
+        for i in range(self.__position[1]):
+            result += "\n"
+
+        for i in range(self.__size):
+            for j in range(self.__position[0]):
+                result += " "
+            for j in range(self.__size):
+                result += "#"
+
+            result += "\n"
+
+        if self.__size <= 0:
+            result += "\n"
+
+        return result
+
     def area(self):
         """claculate square area"""
         return self.__size ** 2
